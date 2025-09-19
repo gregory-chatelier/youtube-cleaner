@@ -28,9 +28,19 @@ run.bat "https://www.youtube.com/watch?v=VIDEO_ID"
 
 ### macOS / Linux / WSL
 
-Use the `run.sh` script:
+Use the `run.sh` script. You may need to make it executable first:
+```bash
+chmod +x run.sh
+```
+Then run it with:
 ```bash
 ./run.sh "https://www.youtube.com/watch?v=VIDEO_ID"
+```
+
+**Note:** Depending on your Docker installation, you may need to run the script with `sudo`:
+
+```bash
+sudo ./run.sh "https://www.youtube.com/watch?v=VIDEO_ID"
 ```
 
 The cleaned video will be in:
