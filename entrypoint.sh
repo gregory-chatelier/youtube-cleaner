@@ -25,7 +25,7 @@ vocal_files_list="vocal_files.txt"
 for i in $(seq 0 $CHUNK_DURATION $duration); do
   chunk_name="chunk_${i}"
   ffmpeg -i "${BASENAME}.wav" -ss "$i" -t "$CHUNK_DURATION" -c copy "${chunk_name}.wav"
-  spleeter separate -p spleeter:2stems -o "output" "${chunk_name}.wav"
+  spleeter separate -p spleeter:4stems-16kHz -o "output" "${chunk_name}.wav"
   echo "file 'output/${chunk_name}/vocals.wav'" >> "$vocal_files_list"
   rm "${chunk_name}.wav"
 done
