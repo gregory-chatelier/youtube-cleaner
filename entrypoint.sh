@@ -8,7 +8,7 @@ fi
 
 URL="$1"
 BASENAME="video"
-CHUNK_DURATION=600 # 10 minutes in seconds
+CHUNK_DURATION=300 # 5 minutes in seconds
 
 # Step 1: Download video and audio
 yt-dlp -f bestvideo+bestaudio --merge-output-format mp4 -o "${BASENAME}.mp4" "$URL"
