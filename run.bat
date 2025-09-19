@@ -10,4 +10,4 @@ set URL=%1
 
 if not exist out mkdir out
 
-docker run --rm --memory="4g" -v "%cd%\out:/out" youtube-cleaner %URL%
+docker run --rm --memory="8g" -v "%cd%\out:/out" youtube-cleaner %URL%

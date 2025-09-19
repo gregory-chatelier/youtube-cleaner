@@ -8,4 +8,4 @@ fi
 
 URL="$1"
 
-docker run --rm --memory="4g" -v "$(pwd)/out:/out" youtube-cleaner "$URL"
+docker run --rm --memory="8g" -v "$(pwd)/out:/out" youtube-cleaner "$URL"
